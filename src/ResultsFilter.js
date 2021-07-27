@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import DogoCard from "./DogoCard.js";
 import dogos from "./db1.json";
 import DetailNumberNav from "./DetailNumberNav.js";
-import { GiDogHouse } from "react-icons/gi";
+
 import { FaDog } from "react-icons/fa";
 
 export default function ResultsFilter(props) {

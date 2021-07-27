@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaCity } from "react-icons/fa";
 
 import ResultsFilter from "./ResultsFilter.js";
 
@@ -70,7 +71,7 @@ export default function ResultsRender() {
         </div>
         {location !== "default" && (
           <p>
-            Showing results in{" "}
+            <FaCity />{" "}
             {`${location[0].toUpperCase()}${location.slice(
               1,
               location.length
