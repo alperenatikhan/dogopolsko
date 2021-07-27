@@ -53,11 +53,11 @@ export default function ResultsFilter(props) {
   return (
     <>
       {noResultsFound ? (
-        <h3> Unfortunately no results </h3>
+        <h3> Niestety, bez rezultatów.</h3>
       ) : (
         <p>
           {" "}
-          <FaDog /> <strong>{doglist.length} </strong> results{" "}
+          <FaDog /> <strong>{doglist.length} </strong> ogłoszenia{" "}
         </p>
       )}
       <DetailNumberNav pageNumber={pageNumber} doglist={doglist} />

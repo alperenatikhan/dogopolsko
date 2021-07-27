@@ -60,7 +60,7 @@ export default function ResultsRender() {
           ))}
           <select onChange={(el) => setLocation(el.target.value)}>
             {" "}
-            <option value="dogos"> Please Select Region </option>
+            <option value="dogos"> Województwo </option>
             {regions.map((region) => (
               <option value={region}>{`${region[0].toUpperCase()}${region.slice(
                 1,
