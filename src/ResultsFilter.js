@@ -70,6 +70,7 @@ export default function ResultsFilter(props) {
       >
         {upToTotalPageNumber.map((num) => (
           <button
+            style={{ margin: "0.2rem" }}
             key={num}
             value={num}
             onClick={(el) => setPageNumber(el.target.value)}

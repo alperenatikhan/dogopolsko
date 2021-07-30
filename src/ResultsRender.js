@@ -50,6 +50,7 @@ export default function ResultsRender() {
         <div>
           {cities.map((city) => (
             <button
+              style={{ fontSize: "1rem", padding: "0.3rem", margin: "0.2rem" }}
               value={city}
               key={city}
               onClick={(el) => setLocation(el.target.value)}
@@ -58,7 +59,10 @@ export default function ResultsRender() {
               {`${city[0].toUpperCase()}${city.slice(1, city.length)}`}
             </button>
           ))}
-          <select onChange={(el) => setLocation(el.target.value)}>
+          <select
+            style={{ fontSize: "1rem", padding: "0.3rem", margin: "0.2rem" }}
+            onChange={(el) => setLocation(el.target.value)}
+          >
             {" "}
             <option value="dogos"> Województwo </option>
             {regions.map((region) => (
