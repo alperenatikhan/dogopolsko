@@ -50,7 +50,11 @@ export default function ResultsRender() {
         <div>
           {cities.map((city) => (
             <button
-              style={{ fontSize: "1rem", padding: "0.3rem", margin: "0.2rem" }}
+              style={{
+                fontSize: "0.9rem",
+                padding: "0.3rem",
+                margin: "0.2rem"
+              }}
               value={city}
               key={city}
               onClick={(el) => setLocation(el.target.value)}
@@ -60,7 +64,7 @@ export default function ResultsRender() {
             </button>
           ))}
           <select
-            style={{ fontSize: "1rem", padding: "0.3rem", margin: "0.2rem" }}
+            style={{ fontSize: "0.9rem", padding: "0.3rem", margin: "0.2rem" }}
             onChange={(el) => setLocation(el.target.value)}
           >
             {" "}
